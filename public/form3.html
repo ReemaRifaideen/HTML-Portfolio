@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marstech Student Form</title>
+    </head>
+    <body>
+        
+        <form action="" method="Get"  enctype="multipart/form-data" >
+          <br><br>  
+          <center><h1>Marstech Student Registration</h1></center>
+            <fieldset bgcolor="blue">
+                <legend><b>Login Information</b></legend>
+                <p> 
+                    <label for="name">Name:</label> <br>
+                    <input type="text" name="user-name" size="30" id="name"> 
+                </p>
+                <p>
+                    <label for="mail">Email/Gmail: </label><br>
+                    <input type="text" name="email/gmail" size="30" id="mail"> 
+                </p>
+            </fieldset>
+            
+           
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <p>
+                    <label for="add">Address: </label><br>
+                    <textarea name="address" id="add" cols="29" rows="4" maxlength="100" ></textarea>
+                </p>
+                <p>
+                    <label for="">Gender:</label>
+                    <input type="radio" name="Gender" value="Masculine" checked id="male"><label for="male">Masculine</label>
+                    <input type="radio" name="Gender" value="Feminine" id="female" ><label for="female">Feminine</label>
+                </p>
+                <p>
+                    <label for="DOB">Date of Birth:</label> <br>
+                    <input type="date" name="DOB" id="DOB" >
+                </p>
+                <p>
+                    <label for="">Nationality:</label>
+                    <select name="Country" multiple size="3" >
+                        <option value="India">Indian</option>
+                        <option value="Pakistan"> Pakistani </option>
+                        <option value="China">Chinis</option>
+                        <option value="Afghanistan">Afghani</option>
+                        <option value="UAE">Emerati</option>
+                        <option value="Oman">Omanian</option>
+                        <option value="Sri Lanka">Sri Lankan</option>
+                        <option value="Japan">Japanis</option>
+                        <option value="Australia">Australian</option>
+                        <option value="Egypt" >Egyptian</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><b>Educational Qualification</b></legend>
+                <p>
+                    <label for="">Courses:</label> 
+                    <input type="checkbox" name="Courses[]" value="Software-Engineering" id="Software"><label for="Software">Software Engineering</label> <br>
+                    <input type="checkbox" name="Courses[]" value="Networking" id="Network"><label for="Network">Networking</label> <br>
+                    <input type="checkbox" name="Courses[]" value="Web-Development" id="Webdev"> <label for="Webdev">Web Development</label><br>
+                    <input type="checkbox" name="Courses[]" value="Ethical-Hacking" id="Hack"><label for="Hack">Ethical Hacking</label> <br>
+                    <input type="checkbox" name="Courses[]" value="Artificial-Intelligence" id="Ai"> <label for="Ai">Artificial-Intelligence</label> <br>
+                </p>
+                <p>
+                    <label for="resume">Upload Resume:</label> <br>
+                    <input type="file" name="resume" id="resume"  >
+                </p>
+                <p>
+                    <label for="img">Upload Photo:</label> <br>
+                    <input type="file" name="photo" id="img" >
+                </p>
+    
+            </fieldset>
+ 
+            <br><br><br>
+            <input type="submit" name="submit" value="SUBMIT">
+                </fieldset>
+        </form>
+    </body>
+</html>

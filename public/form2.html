@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Uni-form</title>
+    </head>
+    <body>
+        <h1>STUDENT APPLICATION FORM</h1>
+        <h3>Marstech International Campus-Online Studies</h3><br><br>
+        <img src="" alt="">
+        <form action="" method="post"  enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>login details</legend>
+                <p>
+                    <label for="name">USER NAME:</label> <br>
+                    <input type="text" name="user-name[]" size="30" id="name"> <br><br>
+
+                    <label for="mail">EMAIL ID:</label> <br>
+                    <input type="text" name="email[]" size="30" id="mail"> 
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>contact detail</legend>
+                <p>
+                    <label for="add">ADDRESS:</label> <br>
+                    <textarea name="address[]" id="add" cols="30" rows="5" maxlength="100"></textarea> <br><br>
+
+                    <label for="">GENDER:<br></label>
+                    <input type="radio" name="gender[]" id="male"><label for="male">MALE</label>
+                    <input type="radio" name="gender[]" id="female" checked><label for="female">FEMALE</label>
+                    <input type="radio" name="gender[]" id="other" ><label for="other">OTHER</label>
+                    <input type="radio" name="gender[]" id="transgender" ><label for="transgender">TRANSGENDER</label><br><br>
+
+                    <label for="">MARITAL STATUS:<br></label>
+                    <input type="radio" name="marital[]" id="single"><label for="single">single</label>
+                    <input type="radio" name="marital[]" id="married" ><label for="married">married</label>
+                    <input type="radio" name="marital[]" id="widowed" ><label for="widowed">widowed</label>
+                    <input type="radio" name="marital[]" id="divorced" ><label for="divorced">divorced</label>
+                    <input type="radio" name="marital[]" id="seperated" ><label for="seperated">seperated</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>course details</legend>
+                <p>
+                    <label for="">COURSES:</label> <br>
+                    <input type="checkbox" name="course[]" value="Web-Development" id="web"><label for="web">Web Development</label> 
+                    <input type="checkbox" name="course[]" value="Hardware-Engineering" id="hard"><label for="hard">Hardware Engineering</label> 
+                    <input type="checkbox" name="course[]" value="Network-Engineering" id="net"><label for="net">Network Engineering</label> 
+                    <input type="checkbox" name="course[]" value="Software-Engineering" id="soft"><label for="soft">Software Engineering</label> 
+                    <input type="checkbox" name="course[]" value="Graphic-Designing" id="design"><label for="design">Graphic Designing</label> 
+                    <input type="checkbox" name="course[]" value="Application-Development" id="app"><label for="app">Application Development</label>
+                </p>
+                    
+                <p>
+                    <select name="activity[]" multiple size="4" >
+                        <option value="dancing">dancing</option>
+                        <option value="cricket">cricket</option>
+                        <option value="football">football</option>
+                        <option value="basketball">basketball</option>
+                        <option value="netball">netball</option>
+                        <option value="volleyball">volleyball</option>
+                    </select>
+                </p>
+
+                <p>
+                     upload your certificates: <br>
+                    <input type="file" name="certificates" id="doc"><label for="doc"></label>
+                </p>
+            </fieldset>
+
+            <br><br><br>
+            <input type="submit" name="submit" value="SUBMIT">
+            <input type="submit" name="exit" value="EXIT">
+
+            
+            
+           
+        </form>
+    </body>
+</html>
